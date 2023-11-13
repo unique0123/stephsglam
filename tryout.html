@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('C:/Users/UNIQUE.DESKTOP-NUU99NQ/Documents/anew start/darkbluebg.jpg');
+            background-size: cover;
+        }
+        .box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px) rotateY('0deg');
+        }
+        .box span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i)* 45deg))
+            translateZ(400px);
+            -webkit-box-reflect: below 0px 
+            linear-gradient(transparent, transparent, #0004);
+        }
+        .box span img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+ <div class="box">
+    <span style="--i:1;"><img src="C:\Users\UNIQUE.DESKTOP-NUU99NQ\Documents\pictures\air-jordan-1-mid-se-big-kids-shoes-WvPMgM.jpeg" alt=""></span>
+    <span style="--i:2;"><img src="C:\Users\UNIQUE.DESKTOP-NUU99NQ\Documents\pictures\air-max-97-premium-mens-shoes-vf75n4.jpeg" alt=""></span>
+    <span style="--i:3;"><img src="C:\Users\UNIQUE.DESKTOP-NUU99NQ\Documents\pictures\air-max-270-womens-shoes-Pgb94t.jpeg" alt=""></span>
+    <span style="--i:4;"><img src="C:\Users\UNIQUE.DESKTOP-NUU99NQ\Documents\pictures\air-max-pre-day-mens-shoes-JBXGg7.jpeg" alt=""></span>
+    <span style="--i:5;"><img src="C:\Users\UNIQUE.DESKTOP-NUU99NQ\Documents\pictures\air-more-uptempo-se-womens-shoes-1H3Z82.jpeg" alt=""></span>
+    <span style="--i:6;"><img src="C:\Users\UNIQUE.DESKTOP-NUU99NQ\Documents\pictures\air-vapormax-plus-mens-shoes-nC0dzF.jpeg" alt=""></span>
+    <span style="--i:7;"><img src="C:\Users\UNIQUE.DESKTOP-NUU99NQ\Documents\pictures\dunk-high-1985-shoes-L05QbB,jpeg" alt=""></span>
+    <span style="--i:8;"><img src="C:\Users\UNIQUE.DESKTOP-NUU99NQ\Documents\pictures\dunk-high-retro-mens-shoes-dTVTCk.jpeg" alt=""></span>
+ </div> 
+ <script type="text/javascript">
+    let box = document.querySelector(".box");
+    window.onmousemove = function(e){
+        let x = e.clientX/3;
+        box.style.transform =
+        "perspective(1000px) rotateY(" + x +"deg)";
+    }
+ </script>  
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+
+@media only screen and (max-width: 600px) {
+    .sidenav2 {
+      padding-left: 25%;
+    }
+    .container-1  {
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+     align-items: normal;
+     justify-content: none;
+     padding-bottom: 20px;
+     padding-top: 0;
+     font-size: 15px;
+    }
+    #content {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 0px;
+      margin-top: 30%;
+      padding-right: 0;
+      width: 0;
+    }
+    .gallery {
+      padding-left: 18%;
+      padding-top: 95px;
+    }
+    .shoe-gallery{
+      margin: 0;
+      /* padding-left: 25%; */
+      margin-left: 25%;
+      margin-top: 0;
+      padding-bottom: 0;
+      padding-right: 0;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 5px;
+      font-size: 20px;
+      font-family: montserrat;
+      color: black;
+    }
+    .shoe-gallery a:hover {
+      background-color: #111;
+      color: #f2f2f2;
+    }
+    .elevate {
+      display: none;
+    }
+    .elevate-main {
+     display: none;
+    }
+    footer {
+      flex-wrap: wrap;
+    }
+  }
+  
+  
+  @media (min-width: 0px) and (max-width: 991px) {
+    .sidenav {
+      display: none;
+    }
+    .openbtn {
+      display: none;
+    }
+    .closebtn {
+      display: none;
+    }
+    
+    details {
+      /* border: 1px solid #ccc; */
+      border-radius: 5px;
+      padding: 10px;
+      width: 200px;
+  }
+  @media (min-width: 992px) and (max-width: 1999px) {
+    .sidenav2{
+      display: none;
+    }
+  
+  }
+  @media (min-width:1200px){
+    .container-fluid {
+     align-items: center;
+     justify-content: center;
+     
+   }
+   .logo {
+     padding-left: 350px;
+   }
+ }  
+
+ @media (min-width: 992px) and (max-width: 1999px) {
+    .container-fluid{
+      height: 380px;
+    } 
+    .logo {
+      width: 280px;
+      height: 200px;
+    }
+  }
+  @media (min-width: 0px) and (max-width: 991px) {
+    .container-fluid{
+      height: 380px;
+    }
+    .logo {
+      width: 280px;
+      height: 200px;
+      
+    }
+  }
+  @media (max-width: 768px) { 
+    .gallery{
+        flex-wrap: wrap;
+        margin-bottom: 420px;
+        margin-left: 40px;
+        } 
+    .gallery-main {
+        margin-left: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+    /* @media (min: width 769px)(max: width 990px;) {
+      .gallery{
+        flex-wrap: wrap;
+
+      }
+      
+    } */
+
+
+    }
+    @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
